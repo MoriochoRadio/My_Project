@@ -1,0 +1,142 @@
+10:22:19 DEBUG : Logs will be stored at 'C:/Repo/My_Project/MyWork/1_LED_control/IDE.log'.
+10:22:23 INFO  : Platform repository initialization has completed.
+10:22:23 INFO  : Registering command handlers for Vitis TCF services
+10:22:23 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Repo\My_Project\MyWork\1_LED_control\temp_xsdb_launch_script.tcl
+10:22:27 INFO  : XSCT server has started successfully.
+10:22:27 INFO  : plnx-install-location is set to ''
+10:22:27 INFO  : Successfully done setting XSCT server connection channel  
+10:22:31 INFO  : Successfully done setting workspace for the tool. 
+10:22:31 INFO  : Successfully done query RDI_DATADIR 
+10:25:07 INFO  : Result from executing command 'getProjects': led_control
+10:25:07 INFO  : Result from executing command 'getPlatforms': 
+10:43:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:43:30 INFO  : Jtag cable 'Digilent Zybo Z7 210351BD233CA' is selected.
+10:43:30 INFO  : 'jtag frequency' command is executed.
+10:43:30 INFO  : Context for 'APU' is selected.
+10:43:30 INFO  : System reset is completed.
+10:43:33 INFO  : 'after 3000' command is executed.
+10:43:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351BD233CA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351BD233CA-23727093-0"}' command is executed.
+10:43:35 INFO  : Device configured successfully with "C:/Repo/My_Project/MyWork/1_LED_control/led_control_app/_ide/bitstream/system_wrapper.bit"
+10:43:35 INFO  : Context for 'APU' is selected.
+10:43:35 INFO  : Hardware design and registers information is loaded from 'C:/Repo/My_Project/MyWork/1_LED_control/led_control/export/led_control/hw/system_wrapper.xsa'.
+10:43:35 INFO  : 'configparams force-mem-access 1' command is executed.
+10:43:35 INFO  : Context for 'APU' is selected.
+10:43:35 INFO  : Sourcing of 'C:/Repo/My_Project/MyWork/1_LED_control/led_control_app/_ide/psinit/ps7_init.tcl' is done.
+10:43:36 INFO  : 'ps7_init' command is executed.
+10:43:36 INFO  : 'ps7_post_config' command is executed.
+10:43:36 INFO  : 'configparams force-mem-access 0' command is executed.
+10:43:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351BD233CA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351BD233CA-23727093-0"}
+fpga -file C:/Repo/My_Project/MyWork/1_LED_control/led_control_app/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Repo/My_Project/MyWork/1_LED_control/led_control/export/led_control/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Repo/My_Project/MyWork/1_LED_control/led_control_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:43:36 INFO  : Launch script is exported to file 'C:\Repo\My_Project\MyWork\1_LED_control\led_control_app_system\_ide\scripts\systemdebugger_led_control_app_system_standalone.tcl'
+10:44:15 INFO  : Result from executing command 'getProjects': led_control
+10:44:15 INFO  : Result from executing command 'getPlatforms': led_control|C:/Repo/My_Project/MyWork/1_LED_control/led_control/export/led_control/led_control.xpfm
+10:44:16 INFO  : Checking for BSP changes to sync application flags for project 'led_control_app'...
+10:44:28 INFO  : Disconnected from the channel tcfchan#1.
+10:44:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:44:28 INFO  : Jtag cable 'Digilent Zybo Z7 210351BD233CA' is selected.
+10:44:28 INFO  : 'jtag frequency' command is executed.
+10:44:29 INFO  : Context for 'APU' is selected.
+10:44:29 INFO  : System reset is completed.
+10:44:32 INFO  : 'after 3000' command is executed.
+10:44:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351BD233CA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351BD233CA-23727093-0"}' command is executed.
+10:44:34 INFO  : Device configured successfully with "C:/Repo/My_Project/MyWork/1_LED_control/led_control_app/_ide/bitstream/system_wrapper.bit"
+10:44:34 INFO  : Context for 'APU' is selected.
+10:44:34 INFO  : Hardware design and registers information is loaded from 'C:/Repo/My_Project/MyWork/1_LED_control/led_control/export/led_control/hw/system_wrapper.xsa'.
+10:44:34 INFO  : 'configparams force-mem-access 1' command is executed.
+10:44:34 INFO  : Context for 'APU' is selected.
+10:44:34 INFO  : Sourcing of 'C:/Repo/My_Project/MyWork/1_LED_control/led_control_app/_ide/psinit/ps7_init.tcl' is done.
+10:44:34 INFO  : 'ps7_init' command is executed.
+10:44:34 INFO  : 'ps7_post_config' command is executed.
+10:44:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:44:34 INFO  : The application 'C:/Repo/My_Project/MyWork/1_LED_control/led_control_app/Debug/led_control_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:44:34 INFO  : 'configparams force-mem-access 0' command is executed.
+10:44:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351BD233CA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351BD233CA-23727093-0"}
+fpga -file C:/Repo/My_Project/MyWork/1_LED_control/led_control_app/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Repo/My_Project/MyWork/1_LED_control/led_control/export/led_control/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Repo/My_Project/MyWork/1_LED_control/led_control_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Repo/My_Project/MyWork/1_LED_control/led_control_app/Debug/led_control_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:44:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:44:35 INFO  : 'con' command is executed.
+10:44:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:44:35 INFO  : Launch script is exported to file 'C:\Repo\My_Project\MyWork\1_LED_control\led_control_app_system\_ide\scripts\systemdebugger_led_control_app_system_standalone.tcl'
+11:08:36 INFO  : Checking for BSP changes to sync application flags for project 'led_control_app'...
+11:08:49 INFO  : Disconnected from the channel tcfchan#4.
+11:08:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:08:49 INFO  : Jtag cable 'Digilent Zybo Z7 210351BD233CA' is selected.
+11:08:49 INFO  : 'jtag frequency' command is executed.
+11:08:49 INFO  : Context for 'APU' is selected.
+11:08:49 INFO  : System reset is completed.
+11:08:52 INFO  : 'after 3000' command is executed.
+11:08:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351BD233CA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351BD233CA-23727093-0"}' command is executed.
+11:08:54 INFO  : Device configured successfully with "C:/Repo/My_Project/MyWork/1_LED_control/led_control_app/_ide/bitstream/system_wrapper.bit"
+11:08:55 INFO  : Context for 'APU' is selected.
+11:08:55 INFO  : Hardware design and registers information is loaded from 'C:/Repo/My_Project/MyWork/1_LED_control/led_control/export/led_control/hw/system_wrapper.xsa'.
+11:08:55 INFO  : 'configparams force-mem-access 1' command is executed.
+11:08:55 INFO  : Context for 'APU' is selected.
+11:08:55 INFO  : Sourcing of 'C:/Repo/My_Project/MyWork/1_LED_control/led_control_app/_ide/psinit/ps7_init.tcl' is done.
+11:08:55 INFO  : 'ps7_init' command is executed.
+11:08:55 INFO  : 'ps7_post_config' command is executed.
+11:08:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:08:55 INFO  : The application 'C:/Repo/My_Project/MyWork/1_LED_control/led_control_app/Debug/led_control_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:08:55 INFO  : 'configparams force-mem-access 0' command is executed.
+11:08:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351BD233CA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351BD233CA-23727093-0"}
+fpga -file C:/Repo/My_Project/MyWork/1_LED_control/led_control_app/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Repo/My_Project/MyWork/1_LED_control/led_control/export/led_control/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Repo/My_Project/MyWork/1_LED_control/led_control_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Repo/My_Project/MyWork/1_LED_control/led_control_app/Debug/led_control_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:08:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:08:55 INFO  : 'con' command is executed.
+11:08:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:08:55 INFO  : Launch script is exported to file 'C:\Repo\My_Project\MyWork\1_LED_control\led_control_app_system\_ide\scripts\systemdebugger_led_control_app_system_standalone.tcl'
+11:19:38 INFO  : Disconnected from the channel tcfchan#5.

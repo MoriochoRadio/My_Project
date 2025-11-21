@@ -1,0 +1,21 @@
+10:44:17 **** Build of configuration Debug for project led_control_app_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 58753 C:/Repo/My_Project/MyWork/1_LED_control/led_control/export/led_control/led_control.xpfm standalone_domain C:/Repo/My_Project/MyWork/1_LED_control/led_control_app_system/Debug/system.bif
+
+****** Software Commandline Tool (XSCT) v2024.2.0
+  **** SW Build 5239620 on Sun Nov 10 09:56:12 MST 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+Warning: XSCT is deprecated and will be removed in future releases.
+We recommend using the new Python command-line tool for project management and debugging:
+- Run "vitis -i" for interactive mode.
+- Run "vitis -s <script>" for script mode.
+sdcard_gen --xpfm C:/Repo/My_Project/MyWork/1_LED_control/led_control/export/led_control/led_control.xpfm --sys_config led_control --bif C:/Repo/My_Project/MyWork/1_LED_control/led_control_app_system/Debug/system.bif --bitstream C:/Repo/My_Project/MyWork/1_LED_control/led_control_app/_ide/bitstream/system_wrapper.bit --elf C:/Repo/My_Project/MyWork/1_LED_control/led_control_app/Debug/led_control_app.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Repo/My_Project/MyWork/1_LED_control/led_control_app/_ide/bitstream/system_wrapper.bit
+Running C:/Xilinx/Vitis/2024.2/bin/bootgen  -image C:/Repo/My_Project/MyWork/1_LED_control/led_control_app_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+10:44:22 Build Finished (took 4s.846ms)
+
