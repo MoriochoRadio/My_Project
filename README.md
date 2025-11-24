@@ -1,52 +1,112 @@
-# 🖐️GitHub 활용 사물인터넷 프로그래밍 캠프
+# 🚀 My IoT × GitHub Project  
+**GitHub와 IoT 장비를 연동하여 LED 제어와 버튼 입력을 테스트하는 실습 프로젝트입니다.**  
+이번 활동을 통해 GitHub의 기초, 버전 관리 방식, 협업 흐름, 그리고 오픈소스의 철학까지 함께 학습했습니다.
 
-## 🎁 어서오세요
-환영합니다! 
-GitHub을 중심으로 오픈소스 생태계 속에서 IoT 장비를 운영해 보는 프로젝트를 마련했습니다. 여러분이 어떤 전공을 하고 있더라도 오픈소스는 우리의 생활 한 가운데에 깊숙하게 자리하고 있어요. 
-오픈 소스는 말 그대로 열려 있는 소스입니다. 누구나 자유롭게 변형하고 운영 함으로써 여러분은 아이디어를 무한히 펼쳐 나갈 수 있게 됩니다.
+![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=GitHub&logoColor=white)
+![IoT](https://img.shields.io/badge/IoT-1E90FF?style=flat&logo=arduino&logoColor=white)
+![Markdown](https://img.shields.io/badge/Markdown-000000?style=flat&logo=markdown&logoColor=white)
 
-오픈소스의 철학은 자유와 자율 그리고 개방과 공유입니다. 
-여러분의 아이디어를 자유롭게 그리고 자발적으로 개방하고 타인과 공유함으로써, 여러분의 아이디어는 여러분 만의 것이 아니라 더욱 무한한 상상력으로 나아가는 가치를 경험할 수 있게 될 것입니다.
+---
 
-## 🚐 구성은 다음과 같아요
-1. **Open Source Environment**
-* 일상 생활속에서 오픈소스에 대해서 알아봅니다. 오픈소스는 우리의 삶에 깊숙하게 파고들어 다재 다능한 방식으로 활용되고 있어요.  우리의 tiny project를 위한 몇 가지의 Open Source를 셋업하고 연결해 보면서 오픈소스의 편리함을 경험해 보아요.
+## 🌱 프로젝트 소개
+이 저장소는 **GitHub 교육 실습**을 위해 제작된 프로젝트로, Zynq 보드 기반 IoT 장비를 연결하여  
+**LED ON/OFF, 버튼 신호 읽기** 등을 테스트하는 코드와 학습 내용을 포함하고 있습니다.
 
-2. **Git/GitHub**
-* 오픈소스 프로젝트의 관리와 협업을 위한 Git / GitHub 솔루션을 함께 살펴 봅니다. 수많은 개발자들이 자신과 팀의 프로젝트를 Git/GitHub을 사용해 관리함으로써 효율적이고 효과적으로 자신의 아이디어를 표현하고 있어요. GitHub을 같이 꾸며보면서 여러분 만의 근사한 포트폴리오를 함께 만들어 보아요.
+- GitHub 기초 사용법  
+- Git/GitHub 기반 프로젝트 관리  
+- Markdown 문서 작성  
+- IoT 장비 제어 실습 (LED, 버튼)  
+- 버전관리 도구 활용 경험 (SourceTree, Git CLI)
 
-3. **Internet of Things**
-* IoT는 우리를 둘러싼 또다른 컴퓨터들이에요. 일상의 PC와는 조금은 다른 IoT장비를 제어해 봄으로써 여러분은 컴퓨터의 원리와 하드웨어를 제어하는 소프트웨어의 힘을 경험할 수 있어요.
+---
 
-## 🍕이런 재료들로 구성했어요
-> 먼저 우리의 프로젝트간 사용할 도구들을 다운로드 해 볼까요?
+## 📌 주요 학습 내용 정리
 
-* Welcome Package : [Download](https://drive.google.com/drive/folders/17hgpCtB6U84NsFr3TUAZSjaWd7eYwUbl?usp=drive_link)
+### 1. 🧭 Git & GitHub Basics
+- Git의 동작 원리 (스테이징, 커밋, 브랜치 흐름 이해)
+- GitHub 저장소 생성 및 Push/Clone
+- CLI와 GUI(SourceTree)를 통한 Git 명령어 실습
+- GitHub Issues, Commits, Branching 간단 체험
+- Markdown을 활용한 문서화 능력 향상
 
-> 도구 모음은 다음과 같아요
+### 2. 🔧 IoT Device Programming
+Zynq-7000 SoC 기반의 Processing System을 사용해:
 
-- [Visual Studio Code](https://code.visualstudio.com/docs/?dv=win64user) : Open Source 기반의 무한한 확장이 가능한 에디터 프로그램
-- [SourceTree](https://product-downloads.atlassian.com/software/sourcetree/windows/ga/SourceTreeSetup-3.4.26.exe) : 그림으로 보는 Git관리 프로그램
-- [Notion](https://www.notion.com/desktop/windows/download?from=marketing&pathname=%2Fdesktop&tid=c9e76650c69f4474985da99843f9b1be) : 다재다능한 노트 프로그램
-- [Slack](https://slack.com/downloads/instructions/windows?ddl=1&build=win64_msix) : 똑똑한 메신저 프로그램
-- [Git](https://github.com/git-for-windows/git/releases/download/v2.51.2.windows.1/Git-2.51.2-64-bit.exe) : 프로젝트 감시/관리 프로그램
-- [TeraTerm](https://github.com/TeraTermProject/teraterm/releases/download/v5.5.0/teraterm-5.5.0-x64.exe) : 컴퓨터 외부 연결 터미널 프로그램
+- LED 제어  
+- 버튼 입력 인식  
+- PMOD 모듈 제어  
 
-## 🚲 실습은 이렇게 준비했어요
-> Session1 : Environmental Setup
-1. E-mail Submit / Register
-2. Notion Invitation / Setup
-3. Slak Invitation / Setup
-4. Utils Download / Setup
+컴퓨터와 IoT 장비 간 **하드웨어-소프트웨어 연동 구조**를 이해했습니다.
 
-> Session2 : Git Pratice
-1. Git Setup
-2. GitHub Setup
-3. MarkDown Practice
-4. Git CLI Practice
-5. SourceTree Setup
-6. Git GUI Practice
+### 3. 🌐 오픈소스 철학 이해
+- 개방, 자유, 공유라는 오픈소스 정신 이해  
+- GitHub을 기반으로 한 오픈 개발 문화 체험  
+- 협업 가능한 개발 환경 구축 경험
 
-> Session3 : IoT Practice using PS(Processing System) embedded in Zynq-7000, Single Die FPGA
-1. Internal LED/Siwtch Control
-2. PMOD Control
+---
+
+## 📁 프로젝트 구성  
+
+My_Project/
+├── src/ # 실습 코드
+├── docs/ # 문서 및 기록 (선택)
+├── images/ # README용 이미지
+└── README.md # 프로젝트 설명 문서
+
+
+---
+
+## 🧪 IoT 실습 기능
+
+| 기능 | 설명 |
+|------|------|
+| 🔴 LED 제어 | GPIO를 이용하여 LED ON/OFF |
+| 🔘 버튼 입력 | 버튼의 상태(0/1) 읽기 |
+| 🔌 PMOD 제어 | 외부 확장 모듈 제어 |
+| 🛠️ 시리얼 모니터링 | TeraTerm 등을 통해 출력 확인 |
+
+---
+
+## 🛠 사용 도구
+
+| 도구 | 설명 |
+|------|------|
+| **VS Code** | IoT 코드 작성 및 편집 |
+| **Git for Windows** | Git 명령어 실습 |
+| **SourceTree** | Git GUI | 
+| **TeraTerm** | IoT 장치 연결 및 로그 확인 |
+| **Notion** | 실습 내용 정리 |
+| **Slack** | 실습 커뮤니케이션 |
+
+---
+
+## 🧭 실습 진행 과정
+
+### **Session 1 : 환경 구성**
+- Git, VSCode, SourceTree 설치  
+- Slack, Notion 세팅  
+- TeraTerm 설치 및 연결 확인  
+
+### **Session 2 : Git/GitHub 사용**
+- GitHub 계정 준비 및 저장소 생성  
+- Markdown 작성 연습  
+- Git CLI / SourceTree로 push & pull 실습  
+
+### **Session 3 : IoT 실습**
+- Zynq PS 기반 LED 제어  
+- 버튼 입력 확인  
+- PMOD 제어 실습  
+
+---
+
+## 🎉 실습 결과  
+- GitHub와 IoT 장비 연동 성공  
+- GitHub Repository 운영 경험  
+- Markdown 문서화 능력 향상  
+- 오픈소스 기반 개발 방식 체험  
+
+---
+
+## 📫 문의  
+프로젝트 관련 질문은 Issue로 등록해주세요!
+
