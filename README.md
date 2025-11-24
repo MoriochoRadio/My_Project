@@ -53,7 +53,7 @@ Zynq-7000 SoC 기반의 Processing System을 사용해:
 | 🔴 LED 제어 | GPIO를 이용하여 LED ON/OFF |
 | 🔘 버튼 입력 | 버튼의 상태(0/1) 읽기 |
 | 🔌 PMOD 제어 | 외부 확장 모듈 제어 |
-| 🛠️ 시리얼 모니터링 | TeraTerm 등을 통해 출력 확인 |
+| 🛠️ 시리얼 모니터링 | 출력 확인 |
 
 ---
 
@@ -74,8 +74,7 @@ Zynq-7000 SoC 기반의 Processing System을 사용해:
 
 ### **Session 1 : 환경 구성**
 - Git, VSCode, SourceTree 설치  
-- Slack, Notion 세팅  
-- TeraTerm 설치 및 연결 확인  
+- Slack, Notion 세팅   
 
 ### **Session 2 : Git/GitHub 사용**
 - GitHub 계정 준비 및 저장소 생성  
