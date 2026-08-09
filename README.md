@@ -1,4 +1,7 @@
-# 🚀 My IoT × GitHub Project  
+# 🚀 My IoT × GitHub Project
+
+🇰🇷 한국어 · 🇬🇧 [English](README.en.md)
+
 **GitHub와 IoT 장비(Zybo Z7, Zynq-7000)를 연동하여 LED 제어와 스위치/PMOD 입력을 테스트하는 실습 프로젝트입니다.**  
 이번 활동을 통해 GitHub의 기초, 버전 관리 방식, 협업 흐름, 그리고 오픈소스의 철학까지 함께 학습했습니다.
 
